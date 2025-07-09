@@ -1,0 +1,19 @@
+# Data File Explanation
+Each row is the information for a specific trial of a human. Below is an explanation of the columns.
+
+Block: the current block
+Trial: the current trial number for that block
+Square 1: reward for square 1 on that trial (if it had been selected)
+Square 2: reward for square 2 on that trial (if it had been selected)
+Square 3: reward for square 3 on that trial (if it had been selected)
+Square 4: reward for square 4 on that trial (if it had been selected)
+
+currPoints: the actual reward participants obtained on that trial (i.e., from the arm they selected)
+totalPoints: the sum total of the points the participants have obtained on the block
+Square: the bandit arm they selected (invalid = they didn't select an arm)
+choiceKey.keys: the key the participants used to select the arm ("r","f","j","i")
+choiceKey.RT: the time it took them to select the arm
+armNum: redudant with square
+blockType: p = practice block, v = volatile block, s = stationary block, n = drifting block
+blockNum: the specific block used to generate the reward distributions of the arms
+
