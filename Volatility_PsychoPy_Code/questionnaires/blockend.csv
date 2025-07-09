@@ -1,0 +1,8 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Instructions,,,heading,,
+0,Please answer the following questions,,,description,,
+confidence,"At the end of the block, how confident were you that the square you chose produced the maximal reward (1 = least confident, 10 = most confident)?","1,2,3,4,5,6,7,8,9,10",horiz,slider,0.4,0.6
+difficult,"How difficult did you find it to learn which option(s) were best on this block? (1 being not difficult at all, 10 being very difficult)","1,2,3,4,5,6,7,8,9,10",horiz,slider,0.4,0.6
+bestSquare,"Which coloured square did you think gave the most points? (leave blank for none, you can specify multiple)",,horiz,text,0.4,0.6
+tryMultiple,Did you try multiple squares?,"Yes, No",vert,radio,0.4,0.6
+squareChange,Do you think the most rewarding square (per it's average points) changed throughout?,"Yes, No, Unsure",vert,radio,0.4,0.6

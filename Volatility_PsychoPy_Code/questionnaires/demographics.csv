@@ -1,0 +1,12 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Instructions,,,heading
+0,Please answer the following questions,,,description
+age,What is your age?,,horiz,text,0.4,0.6
+gender,What is your gender?,"Woman, Man, Non-binary, Different Gender Identity [specify], Prefer not to say",vert,radio,0.4,0.6
+hand,What is your handedness?,"Left, Right, Ambidextrous",vert,radio,0.4,0.6
+education,What is your highest-level of education (completed or in-progress)?,"High-School, College or Technical School, University (BSc/BA), Advanced degree (MSc/PhD)",vert,radio,0.4,0.6
+english,Are you fluent in English?,"Yes - as a first language, Yes - as a second language, No",vert,radio,0.4,0.6
+
+
+
+

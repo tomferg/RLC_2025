@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://moryscarter.com/vespr/formtohtml.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="user-scalable=no">
+    <script src="./curiosity_files/jquery.min.js.download">
+	</script>
+<script type="text/javascript">
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+		});
+		return vars;
+	}
+	function getUrlParam(parameter, defaultvalue){
+		var urlparameter = defaultvalue;
+		if(window.location.href.indexOf(parameter) > -1){
+        	urlparameter = getUrlVars()[parameter];
+	        }
+		return urlparameter;
+	}
+	var xRes = parseInt(getUrlParam('xRes','30'));
+	var yRes = parseInt(getUrlParam('yRes','30'));
+
+    if ((parseInt(screen.width) < parseInt(screen.height))) {
+        xRes = (screen.width * 3);
+        yRes = Math.round(screen.height * 0.09);
+    } else {
+        xRes = Math.round(screen.width * 0.75); 
+        yRes = Math.round(screen.height * 0.03);
+    }
+
+</script>
+<style type="text/css">
+<!--
+    body {background-color: #333333;}
+    table {
+    border-collapse:collapse;
+    }
+    .heading {text-align: left;
+        color: ;
+    }
+    .description {text-align: left;
+        color: ;
+    }
+    .radioItem {text-align: left;
+        color: ;
+    }
+    .radioResponse {text-align: left;
+        color: ;
+    }
+    .choiceItem {text-align: left;
+        color: ;
+    }
+    .choiceResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .textItem {text-align: left;
+        color: ;
+    }
+    .textResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .sliderItem {text-align: left;
+        color: ;
+    }
+	.style1 {font-size: var(--yRes)px}
+	.style3 {background-color: #333333;}
+	.style2 {text-align: left}
+	.style4 {text-align: left;
+	background-color: #333333;}
+	input[type=radio] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	input[type=checkbox] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: var(--yRes)px;
+		margin: 4px 2px;
+		border-radius: 12px;
+	}
+	.verticalTableHeader {
+        text-align:left;
+        white-space:nowrap;
+        g-origin:50% 50%;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .verticalTableHeader p {
+        margin:0 -100% ;
+        display:inline-block;
+    }
+    .verticalTableHeader p:before{
+        content:'';
+        width:0;
+        padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
+        display:inline-block;
+        vertical-align:middle;
+    }
+    table {
+        text-align:center;
+        table-layout : fixed;
+        margin-left:auto;
+        margin-right:auto;
+        border: 0;
+        width: 80%;
+    }
+    td {
+        padding: 20px;
+    }
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #f3f3f3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+-->
+</style>
+</head>
+<body id="bodyForm" style="width: 1152px; font-family: Arial, Helvetica, sans-serif; justify-content: left; overflow: hidden; color: white; font-size: 26px;">
+	<script>
+		document.getElementById('bodyForm').style = "width: " + xRes + "px; font-family: Arial, Helvetica, sans-serif; justify-content: left;  overflow-x: hidden; overflow-y: hidden; color: white; font-size: "+ yRes +"px";
+		
+	</script>
+	<form name="form1" method="post" action="https://moryscarter.com/vespr/formtohtml.php">  <table>
+  
+<tbody><tr><th valign="top" colspan="2" class="heading">Instructions</th></tr>
+     
+<tr><td valign="top" colspan="2" class="description">Please report how you "generally feel" regarding each item statement by rating yourself on the following 4-point frequency scale: 1&nbsp;=&nbsp;Almost Never, 2&nbsp;=&nbsp;Sometimes, 3&nbsp;=&nbsp;Often, 4&nbsp;=&nbsp;Almost Always.</td></tr>
+     </tbody></table>
+<table>
+<tbody><tr><td valign="top" class="sliderItem" width="40%">I enjoy learning about subjects which are unfamiliar to me</td><td><div class="slidecontainer
+" ,="" id="sliderCUR1"> <input type="range" min="1" max="4" name="QCUR1" id="QCUR1" class="slider" value=""> <span id="sliderCUR1txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR1 = document.getElementById("QCUR1");
+var outputCUR1 = document.getElementById("sliderCUR1txt");
+sliderCUR1.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR1.oninput = function() {
+outputCUR1.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">Difficult conceptual problems can keep me awake all night thinking about solutions</td><td><div class="slidecontainer
+" ,="" id="sliderCUR2"> <input type="range" min="1" max="4" name="QCUR2" id="QCUR2" class="slider" value=""> <span id="sliderCUR2txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR2 = document.getElementById("QCUR2");
+var outputCUR2 = document.getElementById("sliderCUR2txt");
+sliderCUR2.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR2.oninput = function() {
+outputCUR2.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I find it fascinating to learn new information</td><td><div class="slidecontainer
+" ,="" id="sliderCUR3"> <input type="range" min="1" max="4" name="QCUR3" id="QCUR3" class="slider" value=""> <span id="sliderCUR3txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR3 = document.getElementById("QCUR3");
+var outputCUR3 = document.getElementById("sliderCUR3txt");
+sliderCUR3.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR3.oninput = function() {
+outputCUR3.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I can spend hours on a single problem because I just can’t rest without knowing the answer.</td><td><div class="slidecontainer
+" ,="" id="sliderCUR4"> <input type="range" min="1" max="4" name="QCUR4" id="QCUR4" class="slider" value=""> <span id="sliderCUR4txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR4 = document.getElementById("QCUR4");
+var outputCUR4 = document.getElementById("sliderCUR4txt");
+sliderCUR4.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR4.oninput = function() {
+outputCUR4.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I enjoy exploring new ideas</td><td><div class="slidecontainer
+" ,="" id="sliderCUR5"> <input type="range" min="1" max="4" name="QCUR5" id="QCUR5" class="slider" value=""> <span id="sliderCUR5txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR5 = document.getElementById("QCUR5");
+var outputCUR5 = document.getElementById("sliderCUR5txt");
+sliderCUR5.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR5.oninput = function() {
+outputCUR5.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I feel frustrated if I can’t figure out the solution to a problem, so I work even harder to solve it.</td><td><div class="slidecontainer
+" ,="" id="sliderCUR6"> <input type="range" min="1" max="4" name="QCUR6" id="QCUR6" class="slider" value=""> <span id="sliderCUR6txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR6 = document.getElementById("QCUR6");
+var outputCUR6 = document.getElementById("sliderCUR6txt");
+sliderCUR6.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR6.oninput = function() {
+outputCUR6.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">When I learn something new I like to find out more</td><td><div class="slidecontainer
+" ,="" id="sliderCUR7"> <input type="range" min="1" max="4" name="QCUR7" id="QCUR7" class="slider" value=""> <span id="sliderCUR7txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR7 = document.getElementById("QCUR7");
+var outputCUR7 = document.getElementById("sliderCUR7txt");
+sliderCUR7.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR7.oninput = function() {
+outputCUR7.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I brood for a long time in an attempt to solve some fundamental problem</td><td><div class="slidecontainer
+" ,="" id="sliderCUR8"> <input type="range" min="1" max="4" name="QCUR8" id="QCUR8" class="slider" value=""> <span id="sliderCUR8txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR8 = document.getElementById("QCUR8");
+var outputCUR8 = document.getElementById("sliderCUR8txt");
+sliderCUR8.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR8.oninput = function() {
+outputCUR8.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I enjoy discussing abstract concepts</td><td><div class="slidecontainer
+" ,="" id="sliderCUR9"> <input type="range" min="1" max="4" name="QCUR9" id="QCUR9" class="slider" value=""> <span id="sliderCUR9txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR9 = document.getElementById("QCUR9");
+var outputCUR9 = document.getElementById("sliderCUR9txt");
+sliderCUR9.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR9.oninput = function() {
+outputCUR9.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I work like a fiend at problems that I feel must be solved</td><td><div class="slidecontainer
+" ,="" id="sliderCUR10"> <input type="range" min="1" max="4" name="QCUR10" id="QCUR10" class="slider" value=""> <span id="sliderCUR10txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCUR10 = document.getElementById("QCUR10");
+var outputCUR10 = document.getElementById("sliderCUR10txt");
+sliderCUR10.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCUR10.oninput = function() {
+outputCUR10.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr></tbody></table>
+<table> 			<tbody><tr>
+				<td>&nbsp;</td><td style="text-align:center"><input type="submit" name="Submit" value="Submit" class="button"></td>
+			</tr>
+
+ </tbody></table>
+
+</form></body></html>

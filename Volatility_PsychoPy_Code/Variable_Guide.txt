@@ -1,0 +1,30 @@
+
+# FOR Stat/Non-Stat
+# Start Val = 0 is NS/S
+# Start Val = 1 is Volatile
+# volEnviro = True is Volatile, winEnviro = False is NS/S
+
+condVal =np.random.rand()
+
+if condVal > .5:
+     startVal = 1 
+else:
+    startVal = 0
+
+
+# For STAT/NON-STAT
+# expVal = 1 is non-stationary
+# expVal = 2 is stationary
+
+
+randomVal = Math.random()
+
+if ((randomVal > 0.501)) {
+    instrLoc = "instr5.xlsx";
+    expVal = 1;
+    pracCond = "conditions/prac_conditions_win.csv"
+} else {
+    instrLoc = "instr6.xlsx";
+    expVal = 2;
+    pracCond = "conditions/prac_conditions_win.csv"
+}

@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0044)https://moryscarter.com/vespr/formtohtml.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="user-scalable=no">
+    <script src="./cognition_files/jquery.min.js.download">
+	</script>
+<script type="text/javascript">
+	function getUrlVars() {
+		var vars = {};
+		var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+		vars[key] = value;
+		});
+		return vars;
+	}
+	function getUrlParam(parameter, defaultvalue){
+		var urlparameter = defaultvalue;
+		if(window.location.href.indexOf(parameter) > -1){
+        	urlparameter = getUrlVars()[parameter];
+	        }
+		return urlparameter;
+	}
+	var xRes = parseInt(getUrlParam('xRes','30'));
+	var yRes = parseInt(getUrlParam('yRes','30'));
+
+    if ((parseInt(screen.width) < parseInt(screen.height))) {
+        xRes = (screen.width * 3);
+        yRes = Math.round(screen.height * 0.09);
+    } else {
+        xRes = Math.round(screen.width * 0.75); 
+        yRes = Math.round(screen.height * 0.03);
+    }
+
+</script>
+<style type="text/css">
+<!--
+    body {background-color: #333333;}
+    table {
+    border-collapse:collapse;
+    }
+    .heading {text-align: left;
+        color: ;
+    }
+    .description {text-align: left;
+        color: ;
+    }
+    .radioItem {text-align: left;
+        color: ;
+    }
+    .radioResponse {text-align: left;
+        color: ;
+    }
+    .choiceItem {text-align: left;
+        color: ;
+    }
+    .choiceResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .textItem {text-align: left;
+        color: ;
+    }
+    .textResponse {text-align: left;
+        color: ;
+        font-size: var(--yRes)px;
+    }
+    .sliderItem {text-align: left;
+        color: ;
+    }
+	.style1 {font-size: var(--yRes)px}
+	.style3 {background-color: #333333;}
+	.style2 {text-align: left}
+	.style4 {text-align: left;
+	background-color: #333333;}
+	input[type=radio] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	input[type=checkbox] { 
+        	width: 35px; 
+		height: 35px; 
+	} 
+	.button {
+		background-color: #4CAF50;
+		border: none;
+		color: white;
+		padding: 20px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: var(--yRes)px;
+		margin: 4px 2px;
+		border-radius: 12px;
+	}
+	.verticalTableHeader {
+        text-align:left;
+        white-space:nowrap;
+        g-origin:50% 50%;
+        -webkit-transform: rotate(270deg);
+        -moz-transform: rotate(270deg);
+        -ms-transform: rotate(270deg);
+        -o-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+    .verticalTableHeader p {
+        margin:0 -100% ;
+        display:inline-block;
+    }
+    .verticalTableHeader p:before{
+        content:'';
+        width:0;
+        padding-top:110%;/* takes width as reference, + 10% for faking some extra padding */
+        display:inline-block;
+        vertical-align:middle;
+    }
+    table {
+        text-align:center;
+        table-layout : fixed;
+        margin-left:auto;
+        margin-right:auto;
+        border: 0;
+        width: 80%;
+    }
+    td {
+        padding: 20px;
+    }
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background: #f3f3f3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+-->
+</style>
+</head>
+<div><template shadowrootmode="open"><div id="plasmo-shadow-container" style="z-index: 1; position: absolute;"><div id="plasmo-mount-container" style="display: flex; position: relative; top: 0px; left: 0px;"></div></div></template></div><body id="bodyForm" style="width: 1121px; font-family: Arial, Helvetica, sans-serif; justify-content: left; overflow: hidden; color: white; font-size: 28px; --fixation-edge-opacity: 80%; --br-line-height: 1; --br-boldness: 600;" class="vsc-initialized" br-mode="off" saccades-color="" fixation-strength="2" saccades-interval="0">
+	<script>
+		document.getElementById('bodyForm').style = "width: " + xRes + "px; font-family: Arial, Helvetica, sans-serif; justify-content: left;  overflow-x: hidden; overflow-y: hidden; color: white; font-size: "+ yRes +"px";
+		
+	</script>
+	<form name="form1" method="post" action="https://moryscarter.com/vespr/formtohtml.php">  <table>
+  
+<tbody><tr><th valign="top" colspan="2" class="heading">Instructions</th></tr>
+     
+<tr><td valign="top" colspan="2" class="description">For each of the statements below, please indicate to what extent the statement is characteristic of you. If the statement is extremely uncharacteristic of you (not at all like you) please write a "1" to the left of the question; if the statement is extremely characteristic of you (very much like you) please write a "5" next to the question. Of course, a statement may be neither extremely uncharacteristic nor extremely characteristic of you; if so, please use the number in the middle of the scale that describes the best fit. Please keep the following scale in mind as you rate each of the statements below: 1 = extremely uncharacteristic; 2 = somewhat uncharacteristic; 3 = uncertain; 4 = somewhat characteristic; 5 = extremely characteristic.</td></tr>
+     </tbody></table>
+<table>
+<tbody><tr><td valign="top" class="sliderItem" width="40%">I would prefer complex to simple problems</td><td><div class="slidecontainer
+" ,="" id="sliderCOG1"> <input type="range" min="1" max="5" name="QCOG1" id="QCOG1" class="slider" value=""> <span id="sliderCOG1txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG1 = document.getElementById("QCOG1");
+var outputCOG1 = document.getElementById("sliderCOG1txt");
+sliderCOG1.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG1.oninput = function() {
+outputCOG1.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I like to have the responsibility of handling a situation that requires a lot of thinking</td><td><div class="slidecontainer
+" ,="" id="sliderCOG2"> <input type="range" min="1" max="5" name="QCOG2" id="QCOG2" class="slider" value=""> <span id="sliderCOG2txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG2 = document.getElementById("QCOG2");
+var outputCOG2 = document.getElementById("sliderCOG2txt");
+sliderCOG2.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG2.oninput = function() {
+outputCOG2.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">Thinking is not my idea of fun</td><td><div class="slidecontainer
+" ,="" id="sliderCOG3"> <input type="range" min="1" max="5" name="QCOG3" id="QCOG3" class="slider" value=""> <span id="sliderCOG3txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG3 = document.getElementById("QCOG3");
+var outputCOG3 = document.getElementById("sliderCOG3txt");
+sliderCOG3.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG3.oninput = function() {
+outputCOG3.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I would rather do something that requires little thought than something that is sure to challenge my thinking abilities</td><td><div class="slidecontainer
+" ,="" id="sliderCOG4"> <input type="range" min="1" max="5" name="QCOG4" id="QCOG4" class="slider" value=""> <span id="sliderCOG4txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG4 = document.getElementById("QCOG4");
+var outputCOG4 = document.getElementById("sliderCOG4txt");
+sliderCOG4.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG4.oninput = function() {
+outputCOG4.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I try to anticipate and avoid situations where there is a likely chance I will have to think in depth about something</td><td><div class="slidecontainer
+" ,="" id="sliderCOG5"> <input type="range" min="1" max="5" name="QCOG5" id="QCOG5" class="slider" value=""> <span id="sliderCOG5txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG5 = document.getElementById("QCOG5");
+var outputCOG5 = document.getElementById("sliderCOG5txt");
+sliderCOG5.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG5.oninput = function() {
+outputCOG5.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I find satisfaction in deliberating hard and for long hours</td><td><div class="slidecontainer
+" ,="" id="sliderCOG6"> <input type="range" min="1" max="5" name="QCOG6" id="QCOG6" class="slider" value=""> <span id="sliderCOG6txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG6 = document.getElementById("QCOG6");
+var outputCOG6 = document.getElementById("sliderCOG6txt");
+sliderCOG6.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG6.oninput = function() {
+outputCOG6.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I only think as hard as I have to</td><td><div class="slidecontainer
+" ,="" id="sliderCOG7"> <input type="range" min="1" max="5" name="QCOG7" id="QCOG7" class="slider" value=""> <span id="sliderCOG7txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG7 = document.getElementById("QCOG7");
+var outputCOG7 = document.getElementById("sliderCOG7txt");
+sliderCOG7.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG7.oninput = function() {
+outputCOG7.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I prefer to think about small, daily projects to long-term ones</td><td><div class="slidecontainer
+" ,="" id="sliderCOG8"> <input type="range" min="1" max="5" name="QCOG8" id="QCOG8" class="slider" value=""> <span id="sliderCOG8txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG8 = document.getElementById("QCOG8");
+var outputCOG8 = document.getElementById("sliderCOG8txt");
+sliderCOG8.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG8.oninput = function() {
+outputCOG8.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I like tasks that require little thought once I've learned them</td><td><div class="slidecontainer
+" ,="" id="sliderCOG9"> <input type="range" min="1" max="5" name="QCOG9" id="QCOG9" class="slider" value=""> <span id="sliderCOG9txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG9 = document.getElementById("QCOG9");
+var outputCOG9 = document.getElementById("sliderCOG9txt");
+sliderCOG9.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG9.oninput = function() {
+outputCOG9.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">The idea of relying on thought to make my way to the top appeals to me</td><td><div class="slidecontainer
+" ,="" id="sliderCOG10"> <input type="range" min="1" max="5" name="QCOG10" id="QCOG10" class="slider" value=""> <span id="sliderCOG10txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG10 = document.getElementById("QCOG10");
+var outputCOG10 = document.getElementById("sliderCOG10txt");
+sliderCOG10.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG10.oninput = function() {
+outputCOG10.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I really enjoy a task that involves coming up with new solutions to problems</td><td><div class="slidecontainer
+" ,="" id="sliderCOG11"> <input type="range" min="1" max="5" name="QCOG11" id="QCOG11" class="slider" value=""> <span id="sliderCOG11txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG11 = document.getElementById("QCOG11");
+var outputCOG11 = document.getElementById("sliderCOG11txt");
+sliderCOG11.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG11.oninput = function() {
+outputCOG11.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">Learning new ways to think doesn't excite me very much</td><td><div class="slidecontainer
+" ,="" id="sliderCOG12"> <input type="range" min="1" max="5" name="QCOG12" id="QCOG12" class="slider" value=""> <span id="sliderCOG12txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG12 = document.getElementById("QCOG12");
+var outputCOG12 = document.getElementById("sliderCOG12txt");
+sliderCOG12.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG12.oninput = function() {
+outputCOG12.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I prefer my life to be filled with puzzles that I must solve</td><td><div class="slidecontainer
+" ,="" id="sliderCOG13"> <input type="range" min="1" max="5" name="QCOG13" id="QCOG13" class="slider" value=""> <span id="sliderCOG13txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG13 = document.getElementById("QCOG13");
+var outputCOG13 = document.getElementById("sliderCOG13txt");
+sliderCOG13.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG13.oninput = function() {
+outputCOG13.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">The notion of thinking abstractly is appealing to me</td><td><div class="slidecontainer
+" ,="" id="sliderCOG14"> <input type="range" min="1" max="5" name="QCOG14" id="QCOG14" class="slider" value=""> <span id="sliderCOG14txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG14 = document.getElementById("QCOG14");
+var outputCOG14 = document.getElementById("sliderCOG14txt");
+sliderCOG14.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG14.oninput = function() {
+outputCOG14.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought</td><td><div class="slidecontainer
+" ,="" id="sliderCOG15"> <input type="range" min="1" max="5" name="QCOG15" id="QCOG15" class="slider" value=""> <span id="sliderCOG15txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG15 = document.getElementById("QCOG15");
+var outputCOG15 = document.getElementById("sliderCOG15txt");
+sliderCOG15.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG15.oninput = function() {
+outputCOG15.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I feel relief rather than satisfaction after completing a task that required a lot of mental effort</td><td><div class="slidecontainer
+" ,="" id="sliderCOG16"> <input type="range" min="1" max="5" name="QCOG16" id="QCOG16" class="slider" value=""> <span id="sliderCOG16txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG16 = document.getElementById("QCOG16");
+var outputCOG16 = document.getElementById("sliderCOG16txt");
+sliderCOG16.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG16.oninput = function() {
+outputCOG16.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">It's enough for me that something gets the job done; I don't care how or why it works</td><td><div class="slidecontainer
+" ,="" id="sliderCOG17"> <input type="range" min="1" max="5" name="QCOG17" id="QCOG17" class="slider" value=""> <span id="sliderCOG17txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG17 = document.getElementById("QCOG17");
+var outputCOG17 = document.getElementById("sliderCOG17txt");
+sliderCOG17.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG17.oninput = function() {
+outputCOG17.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr>
+<tr><td valign="top" class="sliderItem" width="40%">I usually end up deliberating about issues even when they do not affect me personally</td><td><div class="slidecontainer
+" ,="" id="sliderCOG18"> <input type="range" min="1" max="5" name="QCOG18" id="QCOG18" class="slider" value=""> <span id="sliderCOG18txt" style="font-weight:bold;color:#4CAF50">&nbsp;</span>
+<script>//update if each slider has been moved (so that the participant can only press submit if all sliders have been moved from default)
+var sliderCOG18 = document.getElementById("QCOG18");
+var outputCOG18 = document.getElementById("sliderCOG18txt");
+sliderCOG18.moved = false;
+// Update the current slider value (each time you drag the slider handle)
+sliderCOG18.oninput = function() {
+outputCOG18.innerHTML = this.value;
+this.moved = true;}
+</script>
+</div></td></tr></tbody></table>
+<table> 			<tbody><tr>
+				<td>&nbsp;</td><td style="text-align:center"><input type="submit" name="Submit" value="Submit" class="button"></td>
+			</tr>
+
+ </tbody></table>
+
+</form></body></html>

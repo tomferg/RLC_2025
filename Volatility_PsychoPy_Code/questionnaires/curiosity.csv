@@ -1,0 +1,13 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Instructions,,,heading,,
+0,"Please report how you ""generally feel"" regarding each item statement by rating yourself on the following 4-point frequency scale: 1 = Almost Never, 2 = Sometimes, 3 = Often, 4 = Almost Always.",,,description,,
+CUR1,I enjoy learning about subjects which are unfamiliar to me,"1,2,3,4",horiz,slider,0.4,0.6
+CUR2,Difficult conceptual problems can keep me awake all night thinking about solutions,"1,2,3,4",horiz,slider,0.4,0.6
+CUR3,I find it fascinating to learn new information,"1,2,3,4",horiz,slider,0.4,0.6
+CUR4,I can spend hours on a single problem because I just can’t rest without knowing the answer.,"1,2,3,4",horiz,slider,0.4,0.6
+CUR5,I enjoy exploring new ideas,"1,2,3,4",horiz,slider,0.4,0.6
+CUR6,"I feel frustrated if I can’t figure out the solution to a problem, so I work even harder to solve it.","1,2,3,4",horiz,slider,0.4,0.6
+CUR7,When I learn something new I like to find out more,"1,2,3,4",horiz,slider,0.4,0.6
+CUR8,I brood for a long time in an attempt to solve some fundamental problem,"1,2,3,4",horiz,slider,0.4,0.6
+CUR9,I enjoy discussing abstract concepts,"1,2,3,4",horiz,slider,0.4,0.6
+CUR10,I work like a fiend at problems that I feel must be solved,"1,2,3,4",horiz,slider,0.4,0.6

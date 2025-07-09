@@ -1,0 +1,9 @@
+﻿index,questionText,options,layout,type,questionWidth,responseWidth
+0,Please answer the following questions for the SECOND environment (second set of colored squares) you completed,,,heading,0.4,0.6
+T2_1,"Out of the following options for how you solved the second task, select all that apply.","I randomly selected options with no concern for value, I chose a colour I liked with no concern for value, I chose the option that I thought had the highest value, I would select options in a specific pattern",vert,check,0.6,0.4
+T2_1a,If used other approach then please describe:,[specify],vert,free-text,0.6,0.4
+T2_2,How did you decide to switch squares in the second task? Select all the apply.,"I would switch if my points decreased for a set amount of trials in a row, I would switch randomly to keep track of the other options, I switched when I got bored, I would switch when I got the sense my option had become lower than the other options, I would switch when I became uncertain about another square",vert,check,0.6,0.4
+T2_2a,If used other approach then please describe:,[specify],vert,free-text,0.6,0.4
+T2_3,"When you decided to switch squares in the second task, how did you approach switching? Please select all that apply.","I selected the option I thought would have the highest value based on my prior experience, I randomly selected options, I would select the option I was most uncertain about",vert,check,0.6,0.4
+T2_3a,If used other approach then please describe:,[specify],vert,free-text,0.6,0.4
+T2_4,"How difficult did you find it to learn which option(s) was best within the second task? (1 being not difficult at all, 10 being very difficult)","1,2,3,4,5,6,7,8,9,10",horiz,slider,0.4,0.6

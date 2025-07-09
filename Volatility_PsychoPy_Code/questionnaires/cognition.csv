@@ -1,0 +1,21 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Instructions,,,heading,,
+0,"For each of the statements below, please indicate to what extent the statement is characteristic of you. If the statement is extremely uncharacteristic of you (not at all like you) please write a ""1"" to the left of the question; if the statement is extremely characteristic of you (very much like you) please write a ""5"" next to the question. Of course, a statement may be neither extremely uncharacteristic nor extremely characteristic of you; if so, please use the number in the middle of the scale that describes the best fit. Please keep the following scale in mind as you rate each of the statements below: 1 = extremely uncharacteristic; 2 = somewhat uncharacteristic; 3 = uncertain; 4 = somewhat characteristic; 5 = extremely characteristic.",,,description,,
+COG1,I would prefer complex to simple problems,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG2,I like to have the responsibility of handling a situation that requires a lot of thinking,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG3,Thinking is not my idea of fun,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG4,I would rather do something that requires little thought than something that is sure to challenge my thinking abilities,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG5,I try to anticipate and avoid situations where there is a likely chance I will have to think in depth about something,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG6,I find satisfaction in deliberating hard and for long hours,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG7,I only think as hard as I have to,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG8,"I prefer to think about small, daily projects to long-term ones","1,2,3,4,5",horiz,slider,0.4,0.6
+COG9,I like tasks that require little thought once I've learned them,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG10,The idea of relying on thought to make my way to the top appeals to me,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG11,I really enjoy a task that involves coming up with new solutions to problems,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG12,Learning new ways to think doesn't excite me very much,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG13,I prefer my life to be filled with puzzles that I must solve,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG14,The notion of thinking abstractly is appealing to me,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG15,"I would prefer a task that is intellectual, difficult, and important to one that is somewhat important but does not require much thought","1,2,3,4,5",horiz,slider,0.4,0.6
+COG16,I feel relief rather than satisfaction after completing a task that required a lot of mental effort,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG17,It's enough for me that something gets the job done; I don't care how or why it works,"1,2,3,4,5",horiz,slider,0.4,0.6
+COG18,I usually end up deliberating about issues even when they do not affect me personally,"1,2,3,4,5",horiz,slider,0.4,0.6

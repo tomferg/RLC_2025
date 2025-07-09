@@ -1,0 +1,15 @@
+index,questionText,options,layout,type,questionWidth,responseWidth
+0,Please answer the following questions for the FIRST environment (first set of colored squares) that you completed,,,heading,,
+T1_1,"Out of the following options for how you solved the first task, select all that apply.","I randomly selected options with no concern for value, I choose a colour I liked with no concern for value, I choose the option that I thought had the highest value, I would select options in a specific pattern, Other (please specify) [specify]",vert,check,0.4,0.6
+T1_2,How did you decide to switch squares in the first task? Select all the apply.,"I would switch if my points decreased for a set amount of trials in a row, I would switch randomly to keep track of the other options, I switched when I got bored, I would switch when I got the sense my option had become lower than the other options, I would switch when I became uncertain about another square, Other (please specify) [specify]",vert,check,0.4,0.6
+T2_3,"When you decided to switch squares in the first task, how did you approach switching? Please select all that apply.","I selected the option I thought would have the highest value based on my prior experience, I randomly selected options, I would select the option I was most uncertain about, Other (please specify) [specify]",vert,check,0.4,0.6
+0,Please answer the following questions for the SECOND environment (second set of colored squares) you completed,,,heading,0.4,0.6
+T2_1,"Out of the following options for how you solved the second task, select all that apply.","I randomly selected options with no concern for value, I choose a colour I liked with no concern for value, I choose the option that I thought had the highest value, I would select options in a specific pattern, Other (please specify) [specify]",vert,check,0.4,0.6
+T2_2,How did you decide to switch squares in the second task? Select all the apply.,"I would switch if my points decreased for a set amount of trials in a row, I would switch randomly to keep track of the other options, I switched when I got bored, I would switch when I got the sense my option had become lower than the other options, I would switch when I became uncertain about another square, Other (please specify) [specify]",vert,check,0.4,0.6
+T2_3,"When you decided to switch squares in the second task, how did you approach switching? Please select all that apply.","I selected the option I thought would have the highest value based on my prior experience, I randomly selected options, I would select the option I was most uncertain about, Other (please specify) [specify]",vert,check,0.4,0.6
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
